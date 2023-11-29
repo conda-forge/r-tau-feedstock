@@ -1,4 +1,4 @@
-{% set version = '0.0-24' %}
+{% set version = "0.0-25" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tau_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tau/tau_{{ version }}.tar.gz
-  sha256: f08d9fc92ed11ec01f7da12ccf98862e36ef8bb69d5e42584a08b46cea6917e1
+  sha256: ff22d4a633957479e0ecdb1c0223df09f9321017aade6a28b2f264fe7bbd8e90
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -42,7 +42,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=tau
-  license: GPL-2.0-or-later
+  license: GPL-2.0-only
   summary: Utilities for text analysis.
   license_family: GPL2
   license_file:
