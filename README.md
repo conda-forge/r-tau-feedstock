@@ -9,7 +9,7 @@ About r-tau
 
 Home: https://CRAN.R-project.org/package=tau
 
-Package license: GPL-2.0-or-later
+Package license: GPL-2.0-only
 
 Summary: Utilities for text analysis.
 
@@ -18,7 +18,7 @@ About r-tau
 
 Home: https://CRAN.R-project.org/package=tau
 
-Package license: GPL-2.0-or-later
+Package license: GPL-2.0-only
 
 Summary: Utilities for text analysis.
 
