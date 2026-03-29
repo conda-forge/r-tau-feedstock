@@ -1,15 +1,15 @@
-{% set version = "0.0-27" %}
+{% set version = "0.0-28" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-tau
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/tau_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tau/tau_{{ version }}.tar.gz
-  sha256: e4146537a7712cb5bff1b7c63b4092c6c205d09a747a5928000314b189181608
+  sha256: 8f740751bd09784ce160b370ea7502d9b7f83fbe2b3ec2ad5f66c5a932fadc4c
 
 build:
   number: 0
